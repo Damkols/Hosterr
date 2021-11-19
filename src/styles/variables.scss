@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+//fonts
+$lato: 'Lato', sans-serif;
+$playfair: 'Playfair Display', serif;
+
+//colors
+$bg: #f9f4e8;
+$smallfont: #525252;
+$btncolor: #4977ea;
+
+
+//breakpoints
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+}
+
+// breakpoint 2
+
+@mixin breakpoint2($point) {
+    @if $point == smd {
+        @media screen and (max-width: 468px) {
+            @content;
+        }
+    }
+}
