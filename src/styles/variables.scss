@@ -10,6 +10,19 @@ $smallfont: #525252;
 $btncolor: #4977ea;
 
 
+//button mixin
+
+@mixin button {
+            outline: none;
+            border: 1px solid transparent;
+            padding: 12px 20px;
+            border-radius: 5px;
+            background: $btncolor;
+            color: #fff;
+            font-family: $lato;
+            font-size: 13px;
+}
+
 //breakpoints
 
 @mixin breakpoint($point) {

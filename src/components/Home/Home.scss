@@ -1,1 +1,159 @@
-@import '../../styles/variables.scss'
+@import '../../styles/variables.scss';
+
+.home{
+    width: 90%;
+    margin: 0 auto;
+    height: 80vh;
+    background: $bg;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    margin-top: 7%;
+    justify-content: space-between;
+}
+
+
+.content .content1{
+    width: 50%;
+    background: $bg;
+
+    h3{
+        color: #000;
+        font-size: 50px;
+        font-family: $playfair;
+        width: 90%;
+    }
+
+    p{
+        margin-top: 10px;
+        font-family: $lato;
+        font-size: 15px;
+        font-weight: 500;
+        color: $smallfont;
+        letter-spacing: .2px;
+        width: 70%;
+    }
+
+    // Styling inputing and Button 
+    .input{
+        margin-top: 15px;
+        display: flex;
+
+        input{
+            padding: 10px 45px 10px 10px;
+            font-size: 13px;
+            font-weight: 700;
+            font-family: $lato;
+            outline: none;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        button{
+            @include button();
+        }
+    }
+
+    //styling checkmark and its text
+    .check{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+
+        .checkmark{
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        span{
+            font-family: $lato;
+            font-size: 13px;
+            color: $smallfont;
+        }
+    }
+}
+
+// Styling Images
+
+.content .image{
+    width: 50%;
+    position: relative;
+
+    .blue{
+        width: 300px;
+        position: absolute;
+        top: 0;
+        right: 200px;
+    }
+
+    .pink{
+        width: 300px;
+        position: absolute;
+        top: 0;
+        right: 215px;
+    }
+
+    .purple{
+        width: 300px;
+        position: absolute;
+        top: 0;
+        right: 235px;
+    }
+
+    .image{
+        width: 300px;
+        position: absolute;
+        top: 0;
+        right: 255px;
+    }
+}
+
+//Styling the Footer
+
+footer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .smLinks{
+        a{
+            text-decoration: none;
+            margin-right: 10px;
+            font-family: $lato;
+            font-size: 14px;
+            color: $smallfont;
+        }
+    }
+
+    .help{
+        display: flex;
+        align-items: center;
+
+        .helpImage{
+            margin-right: 10px;
+        }
+
+        .helpText{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            p{
+                font-family: $playfair;
+                font-size: 14px;
+                color: #000;
+            }
+
+            h4{
+                font-family: $lato;
+                font-size: 15px;
+                color: #000;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -8,10 +8,10 @@ const Home = () => {
                 <div className="content1">
                 
                     <h3>Host your website in less than 5 minutes.</h3>
-                    <p>With Hosterr, get your website up and running in no less than 5minutes with the most competitive pricing packages available online.</p>
+                    <p>With Hosterr, get your website up and running in no less than 5 minutes with the most competitive pricing packages available online.</p>
                     <div className="input">
                         <input type="email" name="email" placeholder="Enter e-mail address" />
-                        <button>Join waitlist</button>
+                        <button>Join Waitlist</button>
                     </div>
                     <div className="check">
                         <img src={require('../../assets/Checkmark.svg').default} alt='Checkmark' className="checkmark" />
